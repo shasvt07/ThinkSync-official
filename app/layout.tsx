@@ -13,9 +13,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Discord Clone",
+  title: "ThinkSync",
   description:
-    "Discord Clone with Next.js, React.js, TailWindCSS & TypeScript."
+    "ThinkSync Our 6th sem project."
 };
 
 export default function RootLayout({
