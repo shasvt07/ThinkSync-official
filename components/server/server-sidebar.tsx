@@ -13,6 +13,7 @@ import { Separator } from "@/components/ui/separator";
 import { ServerSection } from "@/components/server/server-section";
 import { ServerChannel } from "@/components/server/server-channel";
 import { ServerMember } from "@/components/server/server-member";
+import { ColabBoard } from "./colab-board";
 
 const iconMap = {
   [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4" />,
@@ -121,6 +122,12 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
           />
         </div>
         <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
+        <div className="mb-2">
+            <ColabBoard
+            serverId= {serverId}
+            label="Colab-Board"/>
+          </div>
+          <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
         {!!textChannels?.length && (
           <div className="mb-2">
             <ServerSection
