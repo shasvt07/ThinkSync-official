@@ -70,10 +70,10 @@ export function InitialModal() {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Customize your server
+            Customize your Cluster
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Give your server a personality with a name and an image. You can
+            Give your Cluster a personality with a name and an image. You can
             always change it later.
           </DialogDescription>
         </DialogHeader>
@@ -103,7 +103,7 @@ export function InitialModal() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">
-                      Server Name
+                      Cluster Name
                     </FormLabel>
                     <FormControl>
                       <Input

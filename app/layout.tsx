@@ -27,13 +27,13 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body
-          className={cn(openSans.className, "bg-white dark:bg-[#313338]")}
+          className={cn(openSans.className, "bg-white dark:bg-[#212730]")}
         >
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
-            storageKey="discord-clone-theme"
+            storageKey="ThinkSyncTheme"
           >
             <SocketProvider>
               <ModalProvider />

@@ -1,7 +1,7 @@
 import React from "react";
 import { redirect } from "next/navigation";
 import { ChannelType, MemberRole } from "@prisma/client";
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { Hash,Sparkles, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
 
 import { currentProfile } from "@/lib/current-profile";
 import { db } from "@/lib/db";
@@ -16,7 +16,7 @@ import { ServerMember } from "@/components/server/server-member";
 import { ColabBoard } from "./colab-board";
 
 const iconMap = {
-  [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4" />,
+  [ChannelType.TEXT]: <Sparkles className="mr-2 h-4 w-4" />,
   [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4" />,
   [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4" />
 };
@@ -76,14 +76,14 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
   )?.role;
 
   return (
-    <div className="flex flex-col h-full text-primary w-full dark:bg-[#2b2d31] bg-[#f2f3f5]">
+    <div className="flex flex-col h-full text-primary w-full dark:bg-primary-black">
       <ServerHeader server={server} role={role} />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">
           <ServerSearch
             data={[
               {
-                label: "Text Channels",
+                label: "Text Space",
                 type: "channel",
                 data: textChannels?.map((channel) => ({
                   id: channel.id,
@@ -92,7 +92,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
                 }))
               },
               {
-                label: "Voice Channels",
+                label: "Voice Space",
                 type: "channel",
                 data: audioChannels?.map((channel) => ({
                   id: channel.id,
@@ -101,7 +101,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
                 }))
               },
               {
-                label: "Video Channels",
+                label: "Video Space",
                 type: "channel",
                 data: videoChannels?.map((channel) => ({
                   id: channel.id,
@@ -134,7 +134,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
               sectionType="channels"
               channelType={ChannelType.TEXT}
               role={role}
-              label="Text Channels"
+              label="Text Space"
             />
             <div className="space-y-[2px]">
               {textChannels.map((channel) => (
@@ -154,7 +154,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
               sectionType="channels"
               channelType={ChannelType.AUDIO}
               role={role}
-              label="Voice Channels"
+              label="Voice Space"
             />
             <div className="space-y-[2px]">
               {audioChannels.map((channel) => (
@@ -174,7 +174,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
               sectionType="channels"
               channelType={ChannelType.VIDEO}
               role={role}
-              label="Video Channels"
+              label="Video Space"
             />
             <div className="space-y-[2px]">
               {videoChannels.map((channel) => (

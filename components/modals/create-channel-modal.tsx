@@ -98,7 +98,7 @@ export function CreateChannelModal() {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Create Channel
+            Create Space
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -110,7 +110,7 @@ export function CreateChannelModal() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">
-                      Channel Name
+                      Space Name
                     </FormLabel>
                     <FormControl>
                       <Input
@@ -129,7 +129,7 @@ export function CreateChannelModal() {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Channel Type</FormLabel>
+                    <FormLabel>Space Type</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}

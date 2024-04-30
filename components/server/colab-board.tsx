@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Channel, ChannelType, MemberRole, Server } from "@prisma/client";
-import { Edit, Hash, Lock, Mic, Trash, Video } from "lucide-react";
+import { Hash,Presentation, Mic, Trash, Video } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -47,7 +47,7 @@ export function ColabBoard({
       )}
       onClick={onClick}
     >
-      <Image src={boardIcon} className="flex-shrink-0 w-5 h-5" alt={""} />
+      <Presentation className="flex-shrink-0 w-5 h-5 text-zinc-500 dark:text-zinc-400"/>
       <p
         className={cn(
           "line-clamp-1 font-semibold text-sm text-black group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300 transition"
