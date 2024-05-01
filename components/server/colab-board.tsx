@@ -34,7 +34,7 @@ export function ColabBoard({
 //   const Icon = iconMap[channel.type];
 
   const onClick = () =>
-    window.open(process.env.NEXT_PUBLIC_COLLAB_BOARD_LINK+`/${serverId}`);
+    window.open(`https://think-sync-collab-board.vercel.app/server/${serverId}`);
 
   return (
     <button
