@@ -125,7 +125,7 @@ export async function ServerSidebar({ serverId }: { serverId: string }) {
         <div className="mb-2">
             <ColabBoard
             serverId= {serverId}
-            label="Colab-Board"/>
+            label="Collab-Board"/>
           </div>
           <Separator className="bg-zinc-200 dark:bg-zinc-700 rounded-md my-2" />
         {!!textChannels?.length && (

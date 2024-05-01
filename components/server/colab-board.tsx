@@ -34,8 +34,6 @@ export function ColabBoard({
 //   const Icon = iconMap[channel.type];
 
   const onClick = () =>
-    // router.push(`/servers/${params?.serverId}/channels/${channel.id}`);
-//   router.push(`https://think-sync.vercel.app/`
     window.open(`https://think-sync.vercel.app/server/${serverId}`);
 
   return (
