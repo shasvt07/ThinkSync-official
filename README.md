@@ -1,3 +1,5 @@
+THINKSYNC
+
 - Client form validation and handling using react-hook-form
 - POST, DELETE, and GET routes in route handlers (app/api & pages)
 - Real-time messaging using Socket.io
