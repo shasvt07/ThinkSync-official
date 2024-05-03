@@ -1,9 +1,3 @@
-# FullStack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL & TypeScript.
-
-Credits: [Antonio Erdeljac](https://github.com/AntonioErdeljac)
-
-Features:
-
 - Client form validation and handling using react-hook-form
 - POST, DELETE, and GET routes in route handlers (app/api & pages)
 - Real-time messaging using Socket.io
