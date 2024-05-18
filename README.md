@@ -81,3 +81,8 @@ Running commands with npm `npm run [command]`
 | `lint`  | Run lint check                           |
 | `build` | Start building app for deployment        |
 | `start` | Run build version of app                 |
+
+
+## Important Links ->
+
+Github link for ThinkSync-collabBoard : https://github.com/shasvt07/ThinkSyncCollabBoard
