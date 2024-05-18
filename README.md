@@ -71,7 +71,7 @@ npx prisma db push
 npm run dev
 ```
 
-## Available commands
+## Available commands ->
 
 Running commands with npm `npm run [command]`
 
