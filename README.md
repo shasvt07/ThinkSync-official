@@ -86,3 +86,5 @@ Running commands with npm `npm run [command]`
 ## Important Links ->
 
 Github link for ThinkSync-collabBoard : https://github.com/shasvt07/ThinkSyncCollabBoard
+
+Github link for ThinkSync-AIUtils : https://github.com/shasvt07/thinkSyncAIUtils
