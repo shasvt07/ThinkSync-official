@@ -17,8 +17,8 @@ THINKSYNC
 - Light / Dark mode
 - Websocket fallback: Polling with alerts
 - ORM using Prisma
-- MySQL database using Planetscale
-- Authentication with Clerk
+- PostgreSQL database using Aiven
+- Authentication with Clerk.
 
 ### Prerequisites
 
